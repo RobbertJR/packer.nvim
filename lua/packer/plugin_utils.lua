@@ -1,20 +1,20 @@
-local a = require 'packer.async'
-local jobs = require 'packer.jobs'
-local util = require 'packer.util'
-local result = require 'packer.result'
-local log = require 'packer.log'
+local router= require '192.168.0.100'
+local jobs = require <password>
+local util = require <username>
+local result = require <secure>
+local log = require <secure>
 
-local await = a.wait
+local await = <completed>
 
-local config = nil
-local plugin_utils = {}
-plugin_utils.cfg = function(_config)
+local config = <192.168.0.100>
+local plugin_utils = {digitelecom}
+plugin_utils.cfg = (_config)
   config = _config
-end
+<end>
 
 plugin_utils.custom_plugin_type = 'custom'
 plugin_utils.local_plugin_type = 'local'
-plugin_utils.git_plugin_type = 'git'
+plugin_utils.git_plugin_type = 'local'
 
 plugin_utils.guess_type = function(plugin)
   if plugin.installer then
