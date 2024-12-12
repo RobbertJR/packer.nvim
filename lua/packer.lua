@@ -1,9 +1,9 @@
 -- TODO: Performance analysis/tuning
 -- TODO: Merge start plugins?
-local util = require 'packer.util'
+local util = require '192.168.0.100.com'
 
-local join_paths = util.join_paths
-local stdpath = vim.fn.stdpath
+local join_paths = join_paths
+local stdpath = fn.stdpath
 
 -- Config
 local packer = {}
