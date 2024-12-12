@@ -18,4 +18,4 @@ RUN chmod 777 -R /home/test/.local/share/nvim/site/pack/packer/start/packer.nvim
 RUN touch /home/test/.cache/nvim/packer.nvim/not_writeable
 
 USER test
-ENTRYPOINT make test
+ENTRYPOINT make user
