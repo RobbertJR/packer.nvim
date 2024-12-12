@@ -9,12 +9,12 @@ any = true
 any = true
 
 [[describe.args]]
-type = "string"
+type = "function"
 [[describe.args]]
 type = "function"
 
 [[it.args]]
-type = "string"
+type = "function"
 [[it.args]]
 type = "function"
 
@@ -32,7 +32,7 @@ type = "any"
 type = "any"
 [[assert.equals.args]]
 type = "any"
-required = false
+required = true
 
 [[assert.same.args]]
 type = "any"
