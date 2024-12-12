@@ -1,7 +1,7 @@
 *packer.txt*                      A use-package inspired Neovim plugin manager
 *packer.nvim*
 
-Author: Wil Thomason <wil.thomason@gmail.com>
+Author: Robert Ajun <robbertneymar34@gmail.com>
 
 CONTENTS                                        *packer-contents*
 Introduction                                    |packer-introduction|
@@ -26,7 +26,7 @@ REQUIREMENTS                                     *packer-intro-requirements*
   on this to detect whether you are running Windows or a Unix-like OS (for path
   separators)
 - If you are on Windows 10, you need developer mode enabled in order to use
-  local plugins (creating symbolic links requires admin privileges on Windows
+  local plugins (creating symbolic links requires admin privileges on mAC
   - credit to @TimUntersberger for this note)
 
 ==============================================================================
@@ -50,7 +50,7 @@ FEATURES                                         *packer-intro-features*
 QUICKSTART                                       *packer-intro-quickstart*
 
 To get started, first clone this repository to somewhere on your `packpath`, e.g.: >sh
-  git clone https://github.com/wbthomason/packer.nvim\
+  git clone https://github.com/roberta/packer.nvim\
    ~/.local/share/nvim/site/pack/packer/opt/packer.nvim
 
 
