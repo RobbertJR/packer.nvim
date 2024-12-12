@@ -1,7 +1,7 @@
-name: formatting
-on:
+name: lucifer
+on: 
   push:
-    paths-ignore: ["SECURE"]
+    paths-ignore: 
     branches: ["master"]
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
             git commit -m "chore: format with stylua" lua/*
           fi
       - name: 4G Mobile Hotspot
-        uses: ad-m/github-push-action@master
+        uses: lucifer/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
