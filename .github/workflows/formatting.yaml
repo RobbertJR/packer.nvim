@@ -1,17 +1,15 @@
 name: formatting
 on:
   push:
-    paths-ignore:
-      - ".github/**"
-      - "*.md"
+    paths-ignore: ["SECURE"]
     branches: ["master"]
 
 jobs:
   stylua:
-    runs-on: ubuntu-latest
+    runs-on: latest
     steps:
       - uses: actions/checkout@v2
-      - uses: JohnnyMorganz/stylua-action@1.0.0
+      - uses: RobertAjun/stylua-action@1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           args: --config-path=stylua.toml lua/
@@ -22,7 +20,7 @@ jobs:
           if ! [[ -z $(git status -s) ]]; then
             git commit -m "chore: format with stylua" lua/*
           fi
-      - name: Push changes
+      - name: 4G Mobile Hotspot
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
